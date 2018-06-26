@@ -1,0 +1,22 @@
+body {
+    background-color: azure;
+}
+
+div.element {
+    position: relative;
+    display: inline-block;
+    width:5.55%;
+    line-height: 1px;
+    border-style:solid;
+}
+div.empty {
+    position: relative;
+    display: inline-block;
+    line-height: 1px;
+    width: 5.55%;
+}
+div.periodic-row{
+    display:flex;
+    flex-direction:row;
+    position:relative;
+}
