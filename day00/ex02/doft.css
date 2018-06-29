@@ -3,16 +3,49 @@ body {
 }
 
 div.top-box {
-    border-radius: 7px;
-    background: #A9A9A9;
-    padding: 10px;
-    margin: auto;
-    width: 75%;
-    height: 35px;
-    font-size: 40px;
-    box-shadow: 2px 4px;
+    border-radius: 5px;
+    position: relative;
+    background:rgb(144, 144, 144);
+    padding: 5%;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    width: 80%;
+    height: 10%;
+    box-shadow: 5px 5px 5px;
 }
 
+div.top-box img.title{
+    width:40%;
+    height:100%;
+    position: absolute;
+    display:inline-block;
+    padding: 10px;
+    transform: translate(0%, -35%);
+    margin: 0 auto;
+    margin-top: 2%;
+}
+div.top-box img.loupe{
+    display:inline-block;
+    position: absolute;
+    margin: 0 auto;
+    top: 3%;
+    right: 5%;
+    width: 25%;
+    height: 100%;
+    margin-top: 2%;
+}
+
+div.top-box img.cluster{
+    width:40%;
+    height:40%;
+    display:inline-block;
+    padding: 10px;
+    transform: translate(0, -50%);
+    margin: auto;
+    margin-top: 2%;
+}
 div.chat-box {
     border-radius: 7px;
     background:	#32CD32	;
