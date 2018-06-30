@@ -1,11 +1,9 @@
-function trim_str (str) {
+function trim_str_split (str) {
 	if (str == null) return str;
-	return str.replace(/\s+$/g, '').replace(/^\s+/g, '').replace( / +/g, ' ' ).split(' ');
+	return str.replace(/\s+$/g, '').replace(/^\s+/g, '').replace( / +/g, ' ' ).split(' ').join('\n');
 }
 
-var i = 0;
-var all_words = process.argv; 
-
-for (var i = 2; i < all_words.length; i++) {
-	
-}
+process.argv.splice(0, 2);
+process.argv.forEach(function(val) {
+	console.log(trim_str_split(val));
+});
