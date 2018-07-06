@@ -1,5 +1,18 @@
-const fs = require('fs');
+const scrape = require('website-scraper');
+const rp = require('request-promise');
+const cheerio = require('cheerio');
 const path = require('path');
-if ([process.argv[2]]) { 
-    fs.mkdirSync(path.join(__dirname, process.argv[2]), 0777);
-}
+var path_name = process.argv[2];
+var options = {
+    uri: ['https://codeburst.io'],
+    transform: function (body) {
+        return cheerio.load(body);
+      }
+};
+rp(options)
+  .then(($) => {
+    console.log($);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
